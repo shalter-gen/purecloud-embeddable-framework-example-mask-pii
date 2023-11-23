@@ -6,7 +6,7 @@ window.Framework = {
         clientIds: {
             'mypurecloud.com': '',
             'mypurecloud.ie': '',
-            'mypurecloud.com.au': '',
+            'mypurecloud.com.au': 'b3d4b6ca-7796-45b0-b4d8-535e5db24dd2',
             'mypurecloud.jp': '',
             'mypurecloud.de': ''
         },
@@ -14,7 +14,7 @@ window.Framework = {
         settings: {
             embedWebRTCByDefault: true,
             hideWebRTCPopUpOption: false,
-            enableCallLogs: true,
+            enableCallLogs: false,
             enableTransferContext: true,
             hideCallLogSubject: true,
             hideCallLogContact: false,
@@ -23,7 +23,25 @@ window.Framework = {
             theme: {
                 primary: '#d4cebd',
                 text: '#123'
-            }
+            },
+            display: {
+                interactionDetails: {
+                    call: [
+                        //"call.Ani",
+                        "call.ConversationId",
+                        "call.QueueName",
+                   ],
+                    message : [
+                        "message.Type",
+                        "call.QueueName",
+                   ],
+                    chat : [
+                        "message.Type",
+                        "call.QueueName",
+                   ],
+                }
+            },
+            embeddedInteractionWindow: true,
         }
     },
 

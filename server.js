@@ -6,7 +6,7 @@ var app = express();
 
 app.use(express.static(__dirname+ "/src"));
 
-app.set('port', (process.env.PORT || 80));
+app.set('port', (process.env.PORT || 8080));
 
 var sslOptions = {
     key: fs.readFileSync('https-requirements/localhost.key'),
