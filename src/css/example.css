@@ -1,6 +1,9 @@
 .interaction {
-    width: 500;
+    width: 801px;
     height: 450px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
 }
 
 .softphone {
@@ -19,6 +22,8 @@ body > div > iframe {
 
 .content {
     width: calc(100% - 220px);
+    top: 480px;
+    position: relative;
 }
 
 .actions {
